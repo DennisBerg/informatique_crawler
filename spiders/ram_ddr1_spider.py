@@ -1,14 +1,14 @@
         # -*- coding: utf-8 -*-
 import scrapy
 
-from informatique.items import RamddrItem
+from project.items import RamddrItem
 
-class Ram_ddr2Spider(scrapy.Spider):
-    name = "ramddr2"
+class Ram_ddr1Spider(scrapy.Spider):
+    name = "ramddr1"
     allowed_domains = ["informatique.nl"]
     start_urls = [
-    # RAM DDR2
-	"http://www.informatique.nl/?M=USL&G=194",
+    # RAM DDR1
+	"http://www.informatique.nl/?M=ART&G=077",
     ]
 
     def parse(self, response):
